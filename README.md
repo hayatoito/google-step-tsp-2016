@@ -1,4 +1,4 @@
-Google 2016 STEP Class 6 - Travelling Salesman Problem Challenges
+Build@Mercari 2020 Week4 - Travelling Salesman PRoblem Challenges.
 ====
 
 This is forked from https://github.com/hayatoito/google-step-tsp-2016
