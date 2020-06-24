@@ -86,7 +86,7 @@ vector<int> solve(vector<ll> x, vector<ll> y, int n)
         min = 9000000000000000000;
         for (int i=0;i<n;i++)
         {
-            min = 9000000000000000000;
+            //min = 9000000000000000000;
             if (i!=now && seen[i]==false)
             {
                 if (min > dis[now][i]) 
