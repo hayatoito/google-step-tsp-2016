@@ -5,8 +5,6 @@ This is forked from https://github.com/hayatoito/google-step-tsp-2016
 
 [![Join the chat at https://gitter.im/hayatoito/google-step-tsp](https://badges.gitter.im/hayatoito/google-step-tsp.svg)](https://gitter.im/hayatoito/google-step-tsp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[Hayato Ito](https://github.com/hayatoito) (hayato@google.com)
-
 ## My Record
 
   | N  | ver1 | --- |
@@ -18,6 +16,9 @@ This is forked from https://github.com/hayatoito/google-step-tsp-2016
  |                        128 | input_4.csv | solution_yours_4.csv   |
  |                        512 | input_5.csv | solution_yours_5.csv   |
  |                       2048 | input_6.csv | solution_yours_6.csv   |
+ 
+ 
+  
 
 1. Problem Statement
 ----
