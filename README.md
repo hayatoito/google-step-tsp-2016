@@ -9,7 +9,7 @@ This is forked from https://github.com/hayatoito/google-step-tsp-2016
 
 ## My Record
 
-  | N (= the number of cities) | ver1 | --- |
+  | N  | ver1 | --- |
  | -------------------------: | ----------- | ---------------------- |
  |                          5 | input_0.csv | solution_yours_0.csv   |
  |                          8 | input_1.csv | solution_yours_1.csv   |
