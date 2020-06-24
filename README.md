@@ -1,4 +1,4 @@
-Build@Mercari 2020 Week4 - Travelling Salesman PRoblem Challenges.
+Build@Mercari 2020 Week4 - TSP(Travelling Salesman Problem).
 ====
 
 This is forked from https://github.com/hayatoito/google-step-tsp-2016
