@@ -53,13 +53,10 @@ void ft_split(const string &s, char c, int num, vector<ll> &x, vector<ll> &y) {
 }
 
 //アルゴリズムの本体
-void solve(vector<ll> x, vector<ll> y, int n)
+vector<int> solve(vector<ll> x, vector<ll> y, int n)
 {
-    vector<int> perm(n);
+    vector<int> ret(n);
     vector< vector<ll> > dis(n, vector<ll>(n));
-
-    for (int i=0;i<n;i++)
-        perm[i]=i;
         
     //N=10^3だしまずはO(N^2)で愚直に書いてみよ、、、、
     for (int i=0; i<n; i++)
@@ -77,13 +74,36 @@ void solve(vector<ll> x, vector<ll> y, int n)
         }
     }
 
-    for (int i=0;i<n;i++)
+    ll min;
+    int min_num;
+    int count=0;
+    ret[count]=0;//0番からスタート
+    int now=0;
+    vector<bool> seen(n,false);
+    seen[0]=true;
+    while (count < n)
     {
-        for (int j=0;j<n;j++)
+        min = 9000000000000000000;
+        for (int i=0;i<n;i++)
         {
-            cout<<"dist["<<i<<"]["<<j<<"]="<<dis[i][j]<<endl;
+            min = 9000000000000000000;
+            if (i!=now && seen[i]==false)
+            {
+                if (min > dis[now][i]) 
+                {
+                    min = dis[now][i];
+                    min_num = i;
+                }
+            } 
         }
+
+        count++;
+        ret[count]=min_num;//count番目に訪れるノード
+        seen[min_num]=true;
+        now = min_num;
     }
+
+    return (ret);
 }
 
 int main(int argc, char *argv[])
@@ -116,14 +136,26 @@ int main(int argc, char *argv[])
             //コンマでsplitしてintに格納する、doubleで格納する方法わからず
             //doubleだと誤差も怖いしintの小数点6桁まででやっとく
             ft_split(line, ',', count-1, x, y);
-            cout<<x[count-1]<<" "<<y[count-1]<<endl;
+            //cout<<x[count-1]<<" "<<y[count-1]<<endl;
             count++;
         }
         count++;
     }
 
     int n = (count-1)/2;
-    solve(x,y,n);
+    vector<int> res;
+    res = solve(x,y,n);
+
+    cout<<"index"<<endl;
+    for (int i=0;i<n;i++)
+        cout<<res[i]<<endl;
+
+    //ファイル書き込み
+    ofstream outputfile(output);
+    outputfile<<"index"<<endl;
+    for (int i=0;i<n;i++)
+        outputfile<<res[i]<<endl;
+    outputfile.close();
 
     // ファイルを閉じる
     ifs.close();
