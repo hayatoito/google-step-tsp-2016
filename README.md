@@ -17,6 +17,14 @@ This is forked from https://github.com/hayatoito/google-step-tsp-2016
  |                        512 | input_5.csv | solution_yours_5.csv   |
  |                       2048 | input_6.csv | solution_yours_6.csv   |
  
+ ## 感想
+ 
+ C/C++で書いたので(?)インプットにめちゃ時間かかりました。  
+ 結局doubleで受け取る方法がわからず、long longで受け取りました。  
+ 大小変わらないのでいいかな、、、、  
+ 2-opt法というのがあるらしい、が時間なくて実装できず。
+ （未完成です）
+ 
  ----
 
 
