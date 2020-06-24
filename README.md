@@ -1,12 +1,34 @@
-Google 2016 STEP Class 6 - Travelling Salesman Problem Challenges
+Build@Mercari 2020 Week4 - TSP(Travelling Salesman Problem).
 ====
+
+This is forked from https://github.com/hayatoito/google-step-tsp-2016
 
 [![Join the chat at https://gitter.im/hayatoito/google-step-tsp](https://badges.gitter.im/hayatoito/google-step-tsp.svg)](https://gitter.im/hayatoito/google-step-tsp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[Hayato Ito](https://github.com/hayatoito) (hayato@google.com)
+## My Record
+
+  | N  | ver1 | --- |
+ | -------------------------: | ----------- | ---------------------- |
+ |                          5 | input_0.csv | solution_yours_0.csv   |
+ |                          8 | input_1.csv | solution_yours_1.csv   |
+ |                         16 | input_2.csv | solution_yours_2.csv   |
+ |                         64 | input_3.csv | solution_yours_3.csv   |
+ |                        128 | input_4.csv | solution_yours_4.csv   |
+ |                        512 | input_5.csv | solution_yours_5.csv   |
+ |                       2048 | input_6.csv | solution_yours_6.csv   |
+ 
+ ## 感想
+ 
+ C/C++で書いたので(?)インプットにめちゃ時間かかりました。  
+ 結局doubleで受け取る方法がわからず、long longで受け取りました。  
+ 大小変わらないのでいいかな、、、、  
+ 2-opt法というのがあるらしい、が時間なくて実装できず。
+ （未完成です）
+ 
+ ----
+
 
 1. Problem Statement
-----
 
 In this assignment, you will design an algorithm to solve a fundamental problem
 faced by every travelling salesperson, called *Travelling Salesman Problem*
@@ -23,7 +45,6 @@ Quoted from [Wikipedia](http://en.wikipedia.org/wiki/Travelling_salesman_problem
 > origin city?
 
 2. Assignment
-----
 
 The assignment is hosted on GitHub,
 https://github.com/hayatoito/google-step-tsp.  You can download the assignment
