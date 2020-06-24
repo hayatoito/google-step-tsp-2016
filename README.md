@@ -7,6 +7,18 @@ This is forked from https://github.com/hayatoito/google-step-tsp-2016
 
 [Hayato Ito](https://github.com/hayatoito) (hayato@google.com)
 
+## My Record
+
+  | N (= the number of cities) | ver1 | --- |
+ | -------------------------: | ----------- | ---------------------- |
+ |                          5 | input_0.csv | solution_yours_0.csv   |
+ |                          8 | input_1.csv | solution_yours_1.csv   |
+ |                         16 | input_2.csv | solution_yours_2.csv   |
+ |                         64 | input_3.csv | solution_yours_3.csv   |
+ |                        128 | input_4.csv | solution_yours_4.csv   |
+ |                        512 | input_5.csv | solution_yours_5.csv   |
+ |                       2048 | input_6.csv | solution_yours_6.csv   |
+
 1. Problem Statement
 ----
 
