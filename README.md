@@ -4,14 +4,6 @@ Build@Mercari 2020 Week4 - TSP(Travelling Salesman Problem).
 This is forked from https://github.com/hayatoito/google-step-tsp-2016
 
 [![Join the chat at https://gitter.im/hayatoito/google-step-tsp](https://badges.gitter.im/hayatoito/google-step-tsp.svg)](https://gitter.im/hayatoito/google-step-tsp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
- 
- ## 感想
- 
- インプットに時間かかり、あまり満足できるものができませんでした。
- ~~結局doubleで受け取る方法がわからず、long longで受け取りました。~~ →stofという関数があるらしくそれを使いました　　
- 結果を出すところまでで精一杯で、改善するところまでいたりませんでした。。。  
-
- ----
 
 
 1. Problem Statement
